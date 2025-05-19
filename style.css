@@ -1,0 +1,529 @@
+/* fonts */
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --color-purple: rgba(98, 68, 163, 1);
+    --color-purple-light: rgba(237, 235, 247, 1);
+    --color-pink: rgba(207, 77, 116, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(32, 41, 57, 1);
+    --color-grey: rgba(105, 117, 134, 1);
+    --color-grey-light: rgba(243, 245, 247, 1);
+    --color-purple-dark: rgba(60, 39, 105, 1);
+}
+h1, h3,p{
+    font-weight: 400;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+}
+p{
+    font-family: "Inter", sans-serif;
+}
+.btn-pink{
+    background: var(--color-pink);
+    padding: 0.7rem 1.5rem;
+    color: var(--color-white);
+    border-radius: 3rem;
+}
+.btn-pink:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-grey);
+}
+.btn-white{
+    padding: 0.7rem 2rem;
+    border: 1px solid var(--color-grey);
+    color: var(--color-black);
+    border-radius: 3rem;
+    text-align: center;
+    background: var(--color-white);
+}
+.btn-white:hover{
+    background: var(--color-pink);
+    color: var(--color-white);
+    border: 0;
+}
+.title{
+    color: var(--color-purple);
+    background: var(--color-purple-light);
+    padding: 1rem;
+    border-radius: 5rem;
+}
+.btn-double a{
+    color: var(--color-black);
+    margin-right: 2rem;
+    padding: 1rem;
+}
+.btn-double a:hover{
+    border: 1px solid var(--color-black);
+    border-radius: 5rem;
+}
+.profile-photo{
+    width: 12%;
+    border-radius: 0.5rem;
+}
+.star{
+    width: 40%;
+}
+
+/* topbar */
+.top-bar{
+    background: var(--color-purple);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+}
+nav .nav-bar{
+    display: flex;
+    gap: 2rem;
+    color: var(--color-grey);
+    cursor: pointer;
+}
+
+/* main */
+main{
+    background: var(--color-purple-light);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--color-purple-dark);
+}
+main .main-left-side{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+main .main-left-side h1{
+    font-size: 56px;
+}
+main .main-left-side p{
+    padding: 1.5rem 0 2rem 0;
+    font-size: 20px;
+}
+main .main-left-side > a{
+    padding: 1rem 2rem;
+}
+main .main-left-side a.btn-story{
+    background: var(--color-white);
+    border: 1px solid var(--color-grey);
+    color: var(--color-black);
+    border-radius: 3rem;
+    margin-left: 1rem;
+}
+main .main-left-side .companies{
+    margin-top: 30%;
+}
+main .main-left-side .companies a{
+    color: var(--color-purple-dark);
+    font-weight: 800;
+    font-size: 20px;
+    padding-right: 1rem;
+}
+main .main-right-side{
+    height: 100vh;
+    background-image: url(img/main-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 5%;
+}
+main .options{
+    grid-column: 1/3;
+    margin: 5% 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main .options a{
+    padding: 1.5rem 2.5rem;
+    margin: 0 1rem;
+    color: var(--color-purple);
+    background: var(--color-white);
+    border-radius: 3rem;
+    font-size: 20px;
+}
+
+/* about us section */
+.about-us{
+    margin: 10%;
+    text-align: center;
+}
+.about-us h1{
+    font-size: 40px;
+    padding: 2rem 0;
+}
+.about-us p{
+    color: var(--color-grey);
+    padding-bottom: 2rem;
+}
+
+
+/* best seller section */
+.best-seller{
+    text-align: center;
+}
+.best-seller > h1{
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 5%;
+}
+.best-seller .options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 0 5%;
+}
+.best-seller .options .option{
+    background: var(--color-grey-light);
+    border-radius: 1rem;
+    padding:  1rem;
+}
+.best-seller .options .option img{
+    width: 20%;
+}
+.best-seller .options .option .name-price{
+    text-align: left;
+}
+.best-seller .options .option .name-price h1{
+    font-size: 20px;
+}
+.best-seller .options .option .name-price p{
+    color: var(--color-grey);
+}
+.best-seller .options .option .btn-white{
+    margin-top: 2rem;
+    display: block;
+    padding: 1rem 0;
+}
+.best-seller .options .option .btn-details a{
+    color: var(--color-black);
+}
+.best-seller .options .option:nth-child(1) img{
+    width: 42%;
+} 
+.best-seller .options .option:nth-child(3) img{
+    width: 15.5vw;
+} 
+.best-seller .option-big{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding: 2% 5%;
+}
+.best-seller .option-big .option{
+    background: var(--color-grey-light);
+    padding: 2rem 0 0 ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.best-seller .option-big .option p{
+    color: var(--color-grey);
+}
+.best-seller .option-big .option h1{
+    font-size: 32px;
+}
+.best-seller .option-big .option img{
+    height: 70vh;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* how it work section */
+section.how-it-works{
+    text-align: center;
+    margin-top: 5%;
+}
+section.how-it-works > h1{
+    font-size: 50px;
+    padding: 2rem 0;
+}
+section.how-it-works p{
+    color: var(--color-grey);
+}
+section.how-it-works .options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+section.how-it-works .options .option span{
+    color: var(--color-purple-dark);
+    background: var(--color-purple-light);
+    padding: 2rem;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+section.how-it-works .options .option h1{
+    padding: 1rem 0;
+}
+
+/* article */
+article{
+    margin: 5%;
+}
+article .option{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+article .option img{
+    width: 100%;
+    height: 100vh;
+    border-radius: 2rem;
+}
+article .option .article-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: left;
+    justify-content: center;
+}
+article .option .article-text a{
+    display: inline-block;
+    width: fit-content;
+}
+article .option .article-text h1{
+    font-size: 50px;
+}
+
+/* comments */
+section.comments {
+    text-align: center;
+}
+section.comments h1{
+    font-size: 50px;
+    margin: 2rem 0;
+}
+section.comments p{
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+section.comments .reviews{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 5%;
+    gap: 2rem;
+}
+section.comments .reviews .review{
+    background: var(--color-grey-light);
+    border-radius: 2rem;
+    text-align: left;
+    padding: 0 2rem;
+}
+section.comments .reviews .review > p{
+    padding: 1rem 0;
+}
+section.comments .reviews .review  p{
+    color: var(--color-grey);
+}
+section.comments .reviews .review .photo-name{
+    display: flex;
+    gap: 1rem;
+}
+
+/* question section */
+section.questions{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: var(--color-grey-light);
+    margin: 5% 0;
+    padding: 5%;
+}
+section.questions h1{
+    font-size: 50px;
+}
+section.questions .questions-left-side  p{
+    padding: 2rem 0;
+}
+section.questions .questions-right-side .question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-white);
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-grey);
+    cursor: pointer;
+}
+section.questions .questions-right-side .answer{
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-grey);
+    position: relative;
+    bottom: 14px;
+    display: none;
+}
+section.questions .questions-right-side .answer.active{
+    display: block;
+}
+
+/* latest posts */
+section.latest-post{
+    margin: auto 5%;
+}
+section.latest-post > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section .latest-posts-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+section .latest-posts-left-side a{
+    width: fit-content;
+}
+section .latest-posts-right-side{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+section.latest-post .posts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2rem 0;
+}
+section.latest-post .posts .post{
+    background: var(--color-grey-light);
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+section.latest-post .posts .post img{
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+section.latest-post .posts .post .text{
+    margin: 2rem;
+    text-align: left;
+}
+section.latest-post .posts .post .text p{
+    padding: 1rem 0;
+    color: var(--color-grey);
+}
+section.latest-post .posts .post .text a{
+    color: var(--color-black);
+}
+section.latest-post .posts .post .text a:hover{
+    border-bottom: 1px solid var(--color-grey);
+}
+
+/* footer */
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 5%;
+}
+footer .footer-left-side .input-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+footer .footer-left-side .input-btn input{
+    padding: 0.7rem 15% 0.7rem 1rem;
+    border-radius: 1rem;
+}
+footer .footer-right-side {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+footer .footer-right-side h1{
+    font-size: 1rem;
+}
+footer .footer-right-side li{
+    color: var(--color-grey);
+    padding: 0.4rem 0;
+}
+
+
+/* media query  */
+@media screen and (max-width: 1000px) {
+    section.comments .reviews{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+    footer .footer-right-side {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 780px) {
+    nav{
+        justify-content: center;
+    }
+    nav .nav-btn{
+        display: none;
+    }
+    main .options{
+        justify-content: center;
+    }
+    .best-seller .option-big{
+        grid-template-columns: 1fr;
+    }
+    section.how-it-works .options{
+        grid-template-columns: 1fr;
+    }
+    article .option{
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
+    article .option img{
+       display: none;
+    }
+    section.comments .reviews{
+        grid-template-columns: 1fr;
+    }
+    section.questions{
+        grid-template-columns: 1fr;
+    }
+    section.questions .questions-left-side{
+        margin-bottom: 2rem;
+    }
+    section.latest-post .posts{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:670px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    main .main-left-side .companies{
+        margin-top: 5%;
+    }
+    main .main-right-side{
+        display: none;
+    }
+    .best-seller .options{
+        grid-template-columns: 1fr;
+    }
+    .best-seller .options .option:nth-child(3) img{
+        width: 50%;
+    } 
+}
